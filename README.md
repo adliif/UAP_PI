@@ -8,6 +8,6 @@ Source code project KATANIME bahasa pemrograman python
    NPM. 2117051094
 
  > Tasya Azzahra Putri       
-   NPM. 2117051017
+   NPM. 2117051043
 
 ~~ Happy Ngoding
