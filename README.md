@@ -1,5 +1,5 @@
 # UAP_PI
-Source code project KATANIME bahasa pemrograman python 
+Source code project KATANIME bahasa pemrograman python menggunakan API dari https://github.com/ricko-v/katanime
 
  > Adli Fiqrullah   
    NPM. 2117051075
