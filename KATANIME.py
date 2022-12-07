@@ -17,6 +17,7 @@ passku = input('Silahkan masukkan passwword Anda : ')
 
 if passku == 'cemaz':
   print('Password Anda benar')
+  
   try:
     os.system('cls')
     print('KATANIME\n')
