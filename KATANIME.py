@@ -33,6 +33,7 @@ listmenu = ['[1] 5 Kata-kata random dari anime',
             '[2] Mencari kata dari kumpulan anime', 
             '[3] Kritik dan saran']
 
+
 def fungsiSearch(kata):                                                               # Function
   params = {
     'kata':kata,
@@ -113,7 +114,7 @@ def main():
         print('#NOTE', random.randint(1, 9999))
         akhiran = user(kritik, saran, nama)
         akhiran.info()
-        
+     
       else:
         print('Maaf, pilihan menu Anda tidak tersedia')
     except(ValueError, TypeError):
@@ -125,4 +126,5 @@ def main():
     else:
       print('Password Anda salah silahkan coba kembali')
 
+      
 main()
