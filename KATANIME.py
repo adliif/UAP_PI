@@ -59,15 +59,6 @@ def fungsiSearch(kata):                                                         
   else:
     print('Masukan Anda tidak tersedia')
 
-  if simpan == 'Y':
-    fa = open('Katanime.txt', 'a')                                                    # File handling
-    fa.write('')
-    print('Notepad Anda berhasil dibuat')
-  elif simpan == 'N':
-    print('Terima kasih telah berkunjung :)')
-  else:
-    print('Masukan Anda tidak tersedia')
-
 
 def main():
   print('Selamat datang di dunia WIBU\n')
