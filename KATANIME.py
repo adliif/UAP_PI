@@ -88,14 +88,14 @@ def main():
 
         simpan = input('Buat file notepad untuk menyalin quotes? [Y/N] : ')
         
-          if simpan == 'Y':
-            fa = open('Katanime.txt', 'a')                                             # File handling
-            fa.write('')
-            print('Notepad Anda berhasil dibuat')
-          elif simpan == 'N':
-            print('Terima kasih telah berkunjung :)')
-          else:
-            print('Masukan Anda tidak tersedia')
+        if simpan == 'Y':
+          fa = open('Katanime.txt', 'a')                                             # File handling
+          fa.write('')
+          print('Notepad Anda berhasil dibuat')
+        elif simpan == 'N':
+          print('Terima kasih telah berkunjung :)')
+        else:
+          print('Masukan Anda tidak tersedia')
 
                 
       elif pilih == 2:
