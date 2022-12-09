@@ -14,18 +14,6 @@ class masukan():                                                                
     return self.__saran
 
 
-class user(masukan):                                                                  # Inheritance
-  def __init__(self, kritik, saran, namaUser):
-    super().__init__(kritik, saran)
-    self.namaUser = namaUser
-
-  def get_namaUser(self):
-    return self.namaUser
-
-  def info(self):
-    print('Nama user : ', self.namaUser)
-    print('Kritik    : ', self._get_kritik())
-    print('Saran     : ', self._get_saran())
 
 
 import json, requests, os, random
