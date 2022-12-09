@@ -98,22 +98,8 @@ def main():
             print('Masukan Anda tidak tersedia')
 
                 
-      elif pilih == 2:
-        os.system('cls')
-        kata = input('\nMasukkan kata yang ingin di cari di anime : ')
-        fungsiSearch(kata)
-
-      elif pilih == 3:
-        os.system('cls')
-        nama = input('\nMasukkan Nama Anda\t : ')
-        kritik = input('Masukkan kritik Anda\t : ')
-        saran = input('Masukkan saran Anda\t : ')
-
-        print('\nMasukan Anda akan kami simpan untuk developer')
-        print('_____________________________________________\n')
-        print('#NOTE', random.randint(1, 9999))
-        akhiran = user(kritik, saran, nama)
-        akhiran.info()
+              
+              
      
       else:
         print('Maaf, pilihan menu Anda tidak tersedia')
