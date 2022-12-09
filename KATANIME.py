@@ -113,8 +113,7 @@ def main():
         print('_____________________________________________\n')
         print('#NOTE', random.randint(1, 9999))
         akhiran = user(kritik, saran, nama)
-        akhiran.info()              
-              
+        akhiran.info()                  
      
       else:
         print('Maaf, pilihan menu Anda tidak tersedia')
