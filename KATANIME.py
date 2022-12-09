@@ -28,10 +28,6 @@ class user(masukan):                                                            
     print('Saran     : ', self._get_saran())
 
 
-import json, requests, os, random
-listmenu = ['[1] 5 Kata-kata random dari anime', 
-            '[2] Mencari kata dari kumpulan anime', 
-            '[3] Kritik dan saran']
 
 
 def fungsiSearch(kata):                                                               # Function
