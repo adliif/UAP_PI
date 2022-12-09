@@ -89,7 +89,7 @@ def main():
         simpan = input('Buat file notepad untuk menyalin quotes? [Y/N] : ')
         
           if simpan == 'Y':
-            fa = open('Katanime.txt', 'a')                                                    # File handling
+            fa = open('Katanime.txt', 'a')                                             # File handling
             fa.write('')
             print('Notepad Anda berhasil dibuat')
           elif simpan == 'N':
@@ -121,7 +121,7 @@ def main():
       print('Maaf, Anda memasukkan input yang salah')
 
   else:
-    if passku.isupper():                                                        # String method
+    if passku.isupper():                                                              # String method
       print('Password harus menggunakan huruf kecil')
     else:
       print('Password Anda salah silahkan coba kembali')
