@@ -2,7 +2,9 @@
 # WALIID ILHAM        / NPM. 2117051094
 # TASYA AZZAHRA PUTRI / NPM. 2117051043
 
-class masukan():                                                                      # Class
+import json, requests, os, random, modules
+
+class masukan():                                                                              # Class
   def __init__(self, kritik, saran):
     self.__kritik = kritik
     self.__saran = saran
@@ -14,7 +16,7 @@ class masukan():                                                                
     return self.__saran
 
 
-class user(masukan):                                                                  # Inheritance
+class user(masukan):                                                                          # Inheritance
   def __init__(self, kritik, saran, namaUser):
     super().__init__(kritik, saran)
     self.namaUser = namaUser
@@ -27,14 +29,8 @@ class user(masukan):                                                            
     print('Kritik    : ', self._get_kritik())
     print('Saran     : ', self._get_saran())
 
-    
-import json, requests, os, random
-listmenu = ['[1] 5 Kata-kata random dari anime', 
-            '[2] Mencari kata dari kumpulan anime', 
-            '[3] Kritik dan saran']
 
-
-def fungsiSearch(kata):                                                               # Function
+def fungsiSearch(kata):                                                                       # Function
   params = {
     'kata':kata,
     'page':random.randint(1, 20)
@@ -51,7 +47,7 @@ def fungsiSearch(kata):                                                         
   simpan = input('Buat file notepad untuk menyalin quotes? [Y/N] : ')
   
   if simpan == 'Y':
-    fa = open('Katanime.txt', 'a')                                                    # File handling
+    fa = open('Katanime.txt', 'a')                                                            # File handling
     fa.write('')
     print('Notepad Anda berhasil dibuat')
   elif simpan == 'N':
@@ -71,8 +67,8 @@ def main():
       print('\n----------------------------------------\n')
       print('\t\tKATANIME')
       print('\n----------------------------------------\n')
-      for i in range(0, len(listmenu)):                                               # Method
-        print(listmenu[i])
+      for i in range(0, len(modules.listmenu)):                                               # Method
+        print(modules.listmenu[i])
 
       pilih = int(input('\nSilahkan pilih menu yang tersedia (WAJIB ANGKA!) : '))
 
@@ -89,7 +85,7 @@ def main():
         simpan = input('Buat file notepad untuk menyalin quotes? [Y/N] : ')
         
         if simpan == 'Y':
-          fa = open('Katanime.txt', 'a')                                             # File handling
+          fa = open('Katanime.txt', 'a')                                                      # File handling
           fa.write('')
           print('Notepad Anda berhasil dibuat')
         elif simpan == 'N':
@@ -121,7 +117,7 @@ def main():
       print('Maaf, Anda memasukkan input yang salah')
 
   else:
-    if passku.isupper():                                                              # String method
+    if passku.isupper():                                                                      # String method
       print('Password harus menggunakan huruf kecil')
     else:
       print('Password Anda salah silahkan coba kembali')
