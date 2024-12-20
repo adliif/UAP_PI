@@ -10,5 +10,3 @@ dari https://github.com/ricko-v/katanime
 
  > Tasya Azzahra Putri       
    NPM. 2117051043
-
-~~ Happy Ngoding
